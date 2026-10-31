@@ -1,5 +1,12 @@
 ﻿# Pocket Wilds - what is new
 
+## [4.2.1] - 2026-10-31  -  clearer screen
+- Red "!": what you already looked at is kept in the save, so a restart does not light all three again;
+  BAG only for a stronger item that just came in (not ones already lying in the bag)
+- Top panel: ATK / DEF / SPD always fit inside (big numbers short: 12.3K, 456K, 1.2M)
+- Damage numbers vanish when they reach the HP bar, so the enemy's name stays readable
+- "XP" label on the blue bar beside the monster's name
+
 ## [4.2.0] - 2026-10-31  -  save to a file, quieter "!"
 - **Save to a file and back.** The web installer has two new buttons: "เก็บเซฟเป็นไฟล์" downloads the
   save, "คืนเซฟจากไฟล์" puts it back after another install (even after a full erase). The file is
