@@ -1,5 +1,16 @@
 ﻿# Pocket Wilds - what is new
 
+## [4.2.0] - 2026-10-31  -  save to a file, quieter "!"
+- **Save to a file and back.** The web installer has two new buttons: "เก็บเซฟเป็นไฟล์" downloads the
+  save, "คืนเซฟจากไฟล์" puts it back after another install (even after a full erase). The file is
+  scrambled and signed, so it cannot be edited, and it only goes back onto the board it came from.
+  Works in the give-away build ("@saveget" / "@saveput" over USB; tools/savefile.py does the same from a PC)
+- **Red "!" only for something new.** Each reason shows once; opening its page puts it away until it
+  goes and comes back: UPGRADE only while stuck on a stage (farming) with gold for a level, BAG when a
+  stronger item comes in, BATTLE for Boss Rush ready, a friend nearby or the Tower 20% stronger
+- sfttech2000 logo at boot: black screen, fades in and out (from cyd_libs, packed to 9 KB)
+- Web installer: installs go through the page only (the one-file .bin download is gone)
+
 ## [4.1.0] - 2026-10-22  -  bag, gems, quests, Arena challenge
 - **Arena: challenges are asked first.** Tapping a friend sends a request; the friend gets a
   CHALLENGE! popup on any page (name, monster, level, ATK, HP, 15 s) and taps FIGHT! to start
