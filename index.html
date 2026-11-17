@@ -80,6 +80,11 @@ a { color: var(--accent); }
 .links a span { color: var(--muted); font-size: 14px; }
 li, p { overflow-wrap: anywhere; }
 footer { font-size: 13px; color: var(--muted); display: grid; gap: 4px; }
+.buy { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 14px; align-items: center; text-decoration: none; color: inherit; }
+.buy img { width: 120px; height: 120px; border-radius: 10px; border: 1px solid var(--line, #d3e2ec); display: block; }
+.buy b { font-family: var(--display); font-size: 17px; }
+.buy .go { display: inline-block; margin-top: 6px; background: #ee4d2d; color: #fff; font-weight: 600; padding: 8px 14px; border-radius: 10px; }
+.buy small { display: block; color: var(--muted); font-size: 12px; margin-top: 4px; }
 </style>
 </head>
 <body>
@@ -93,6 +98,13 @@ footer { font-size: 13px; color: var(--muted); display: grid; gap: 4px; }
   </header>
 
   <div id="unsupported" class="box warn" hidden><b>เบราว์เซอร์นี้ใช้ไม่ได้</b><br>เปิดหน้านี้ด้วย Google Chrome หรือ Microsoft Edge บนคอม หรือ Chrome บนมือถือ Android · iPhone และ iPad ใช้ไม่ได้ (Apple ไม่เปิดให้เว็บใช้พอร์ต USB)</div>
+
+  <section class="card">
+    <a class="buy" href="https://s.shopee.co.th/6q2LUfYbIR" target="_blank" rel="noopener sponsored">
+      <img src="img/buy_cyd.jpg" alt="บอร์ด ESP32 จอ 2.8 นิ้ว (CYD) สีเหลือง" width="120" height="120" loading="lazy">
+      <span><b>ยังไม่มีจอ?</b><br>ซื้อได้จากลิงก์นี้ ใช้ได้ตรงรุ่น ไม่ต้องลุ้น<br><span class="go">ซื้อบน Shopee ›</span><small>ลิงก์นายหน้า: ซื้อผ่านลิงก์นี้ช่วยสนับสนุนผู้สร้าง</small></span>
+    </a>
+  </section>
 
   <section class="card">
     <h2>1. เสียบบอร์ด</h2>
