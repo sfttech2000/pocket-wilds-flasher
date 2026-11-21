@@ -298,10 +298,12 @@ $('go').addEventListener('click', async () => {
       reportProgress: (i, written, size) => bar((before[i] + written) / total),
     });
     bar(1);
-    status('กำลังเริ่มเครื่องใหม่...');
-    await loader.after('hard_reset');
-    status('ติดตั้งเสร็จแล้ว ถอดสายได้เลย บอร์ดจะเริ่มเกมเอง', 'ok');
+    // +1 install, nothing about you: counted once the program is written (the restart below can fail on some
+    // boards / phones although the board is fine)
     fetch('https://sft-count.sft-unlock.workers.dev/hit/pocket-wilds-flasher/installs').catch(() => {}); fetch('https://abacus.jasoncameron.dev/hit/pocket-wilds-flasher/installs').catch(() => {});   // +1 install, nothing about you
+    status('กำลังเริ่มเครื่องใหม่...');
+    try { await loader.after('hard_reset'); } catch (e) { log('reset: ' + (e && e.message ? e.message : e)); }
+    status('ติดตั้งเสร็จแล้ว ถอดสายได้เลย บอร์ดจะเริ่มเกมเอง', 'ok');
   } catch (e) {
     console.error(e);
     log('ERROR: ' + (e && e.message ? e.message : e));
