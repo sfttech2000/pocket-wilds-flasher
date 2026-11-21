@@ -301,7 +301,7 @@ $('go').addEventListener('click', async () => {
     status('กำลังเริ่มเครื่องใหม่...');
     await loader.after('hard_reset');
     status('ติดตั้งเสร็จแล้ว ถอดสายได้เลย บอร์ดจะเริ่มเกมเอง', 'ok');
-    fetch('https://abacus.jasoncameron.dev/hit/pocket-wilds-flasher/installs').catch(() => {});   // +1 install, nothing about you
+    fetch('https://sft-count.sft-unlock.workers.dev/hit/pocket-wilds-flasher/installs').catch(() => {}); fetch('https://abacus.jasoncameron.dev/hit/pocket-wilds-flasher/installs').catch(() => {});   // +1 install, nothing about you
   } catch (e) {
     console.error(e);
     log('ERROR: ' + (e && e.message ? e.message : e));
